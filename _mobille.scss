@@ -1,0 +1,70 @@
+@media(max-width: 735px){
+    .header{
+        height: 735px;
+    }
+    .title{
+        width: 343px;
+        padding-top: 239px;
+        padding-bottom: 32px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        max-width: 350px;
+        color: #FFFFFF;
+        align-items: center;
+    }
+    .header-text{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        width: 343px;
+        color: #FFFFFF;
+        margin-bottom: 44px;
+        padding-left: 16px;
+        padding-right: 16px;
+        
+          }
+          .button{
+            background: #9C0332;
+          border: 1px solid #9C0332FF;
+          box-sizing: border-box;
+          border-radius: 20px;
+          width: 234px;
+          height: 44px;
+          font-size: 13px;
+          line-height: 14px;
+          color: #ffffff;
+          font-family: "Montserrat";
+          font-style: normal;
+          padding: 16px;
+          box-sizing: border-box;
+          margin-left: 70px;
+          margin-right: 70px;
+      
+          }
+  .games{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+          .one{
+            height: 300px;
+            width: 343px;
+          }
+          .two{
+            height: 300px;
+            width: 343px;
+           
+            
+          }
+          .three{
+            height: 300px;
+            width: 343px;
+}
+}
