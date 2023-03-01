@@ -1,98 +1,110 @@
-//задание 1
-let password='пароль';
-let entry=prompt('Введите пароль:');
-if (password==entry) {
-    alert('Пароль введен верно');
-
-} else {
-    alert('Пароль введен неправильно');
+//Задание 1
+let a=prompt("Введите число");
+let b=prompt("Введите второе число");
+function mostNumber(a,b){
+    
+    if (a>b) {
+        console.log(a);
+    } else {
+        console.log(b);
+    }
 }
+mostNumber(a,b);
 //задание 2
-let c=prompt('Введите число:');
-if (c>0 && c<10) {
-    console.log("Верно");
+"use strict";
+let number = prompt("Введите число");
+
+let printMessage;
+
+if (number%2===0) {
+
+    printMessage = function () {
+        console.log("Число четное");
+    }
+
 } else {
-    console.log("Неверно")
+
+    printMessage = function () {
+        console.log("Число нечетное");
+    }
+
 }
+
+printMessage();
+
 //задание 3
-let d=prompt('Введите число:');
-let e=prompt('Введите число:');
-if (100<e || 100<d) {
-    console.log("Верно")
-} else {
-    console.log("Неверно")
+let p=4;
+function squareReturn(p) { 
+    return p**2 
 }
+let result1 = squareReturn(4); 
+alert(result1);
+
 //задание 4
-let a = '2';
-a = Number(a);
-let b = '3';
-b = Number(b);
-alert(a + b);
+"use strict";
+let age = prompt("Введите возраст",13);
 
+let printReport;
+
+
+if (age>12) {
+
+    printReport = function () {
+        console.log("Добро пожаловать");
+    }
+
+} else if (age<0){
+
+    printReport = function () {
+        console.log("Вы ввели неправильное значение");
+    }
+    
+
+} else {
+    printReport= function(){
+        console.log("Привет,друг!");
+    }
+
+}
+
+printReport();
 //задание 5
-let month=prompt('Введите месяц');
-switch(month){
-    case '1':
-        console.log("Это зимний месяц");
-    break;
-    case "2":
-        console.log("Это зимний месяц");
-    break;
-    case "3":
-        console.log("Это весений месяц");
-    break;
-    case "4":
-        console.log("Это весений месяц");
-    break;
-    case "5":
-        console.log("Это весений месяц");
-    break;
-    case "6":
-        console.log("Это летний месяц");
-    break;
-    case "7":
-        console.log("Это летний месяц");
-    break;
-    case "8":
-        console.log("Это летний месяц");
-    break;
-    case "9":
-        console.log("Это осенний месяц");
-    break;
-    case "10":
-        console.log("Это осенний месяц");
-    break;
-    case "11":
-        console.log("Это осенний месяц");
-    break;
-    case '12':
-        console.log("Это зимний месяц");
-    break;
-    default:
-        console.log('Такого месяца не существует');
-    break;
+let r=prompt("Введите число")
+let t=prompt("Введите второе число")
+function sum(r,t) {
+    if (r==='number' && !isNaN(r) && t=== 'number' && !isNaN(t)) {
+        console.log(r+t);
+    } else {
+    console.log("Одно или оба значения не являются числом");
+
+    }
 }
+sum(r,t);
+//задание 6
+let numeric=prompt("Введите число");
+function cube(numeric) {
+    if (numeric==='number' && !isNaN(numeric)) {
+        cube(numeric)=pow(numeric,3)
+       console.log(cube(numeric));
+    } else {
+    console.log("Переданный параметр не является числом");
+    }
+}
+cube(numeric);
 //задание 7
-let p=prompt("Пожалуйста, введите любое число");
-console.log(isNaN(p));
-    if (p % 2 == 0) {
-        alert('Число четное');
-     } else {
-         alert('Число нечетное');
-     }
+function startGameSeasons(){
+    let month=prompt("Введите месяц");
+let season;
+    if (month===1 || month===2 || month===12) {
+        console.log("Зима")
+    } else if(month >= 3 && month <6 ){
+        console.log("Весна")
+    } else if(month >= 7 && month < 9){
+        console.log("Лето")
+    } else if(month >= 9 && month < 12){
+        console.log("Зима")
+    } else{
+        console.log("Такого месяца несуществует")
+    }
 
-
-//задание 8
-let clientOS=prompt('Введите число');
-switch(clientOS){
-case "1":
-    console.log("Установите версию приложения для Android по ссылке");
-break;
-case '0':
-    console.log("Установите версию приложения для iOS по ссылке");
-break;
-default:
-    console.log('Вы используете пк');
-break;
 }
-//задание 9
