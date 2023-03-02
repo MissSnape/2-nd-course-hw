@@ -85,7 +85,7 @@ sum(r,t);
 //задание 6
 let numeric=prompt("Введите число");
 function cube(numeric) {
-    if (numeric==='number' && !isNaN(numeric)) {
+    if (typeof numeric === 'number') {
         cube(numeric)=pow(numeric,3)
        console.log(cube(numeric));
     } else {
