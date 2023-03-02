@@ -72,7 +72,9 @@ printReport();
 let r=prompt("Введите число")
 let t=prompt("Введите второе число")
 function sum(r,t) {
-    if (r==='number' && !isNaN(r) && t=== 'number' && !isNaN(t)) {
+    if (typeof r === 'number' && typeof t === 'number') {
+        t=Number(any_string_number);
+        r=Number(any_string_number);
         console.log(r+t);
     } else {
     console.log("Одно или оба значения не являются числом");
@@ -94,8 +96,7 @@ cube(numeric);
 //задание 7
 function startGameSeasons(){
     let month=prompt("Введите месяц");
-let season;
-    if (month===1 || month===2 || month===12) {
+    if (month === 1 || month === 2 || month === 12) {
         console.log("Зима")
     } else if(month >= 3 && month <6 ){
         console.log("Весна")
