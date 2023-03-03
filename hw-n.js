@@ -69,30 +69,26 @@ if (age>12) {
 
 printReport();
 //задание 5
-let r=prompt("Введите число")
-let t=prompt("Введите второе число")
-function sum(r,t) {
-    if (typeof r === 'number' && typeof t === 'number') {
-        t=Number(any_string_number);
-        r=Number(any_string_number);
-        console.log(r+t);
-    } else {
-    console.log("Одно или оба значения не являются числом");
-
-    }
+let one=prompt("Введи число");
+let two=prompt("Введи число");
+function mult (one, two) { 
+    if(!isNaN(one) && !isNaN(two)) { 
+       return alert(one * two); 
+}    else { 
+        alert ("Одно или оба значения не являются числом"); 
 }
-sum(r,t);
+}
+mult (one, two);
 //задание 6
-let numeric=prompt("Введите число");
-function cube(numeric) {
-    if (typeof numeric === 'number') {
-        cube(numeric)=pow(numeric,3)
-       console.log(cube(numeric));
+let num=prompt("Введите число");
+function cube(num) {
+    if (!isNaN(num)) {
+    return alert("n в кубе равняется "+Math.pow(num,3));
     } else {
-    console.log("Переданный параметр не является числом");
+    console.log('Переданный параметр не является числом');
     }
 }
-cube(numeric);
+cube(num);
 //задание 7
 function startGameSeasons(){
     let month=prompt("Введите месяц");
