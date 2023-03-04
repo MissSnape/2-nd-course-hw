@@ -92,6 +92,7 @@ cube(num);
 //задание 7
 function startGameSeasons(){
     let month=prompt("Введите месяц");
+    month=Number(month);
     if (month === 1 || month === 2 || month === 12) {
         console.log("Зима")
     } else if(month >= 3 && month <6 ){
