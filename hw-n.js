@@ -67,6 +67,7 @@ for(let i=0; i<=6;i++){
     m.push(Math.floor(Math.random()*i));
 
 }
+
 const result = m.reduce((a, b) => a + b, 0) / m.length;
 console.log(result)
 //задание hw-5
