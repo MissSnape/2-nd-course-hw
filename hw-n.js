@@ -5,8 +5,17 @@ function uppercase(){
 }
 uppercase();
 //задание 2
+const search = ['Кошка', 'Кит',  'Комар', 'Носорог'];
 
-//console.log(regexp);
+let regexp = new RegExp(/^Ко/);
+
+search.forEach((el) => {
+
+    if (el.match(regexp)) {
+        console.log(el)
+    }
+
+});
 
 //задание 3
 let a=32.58884;
