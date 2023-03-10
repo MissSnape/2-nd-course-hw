@@ -9,7 +9,7 @@
 
 .header {
   height: 1024px;
-  background-image: url("/img/background.jpg");
+  background-image: url("../img/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -111,17 +111,17 @@
 }
 
 .one {
-  background-image: url(/img/play1.jpg);
+  background-image: url(../img/play1.jpg);
   background-repeat: no-repeat;
 }
 
 .two {
-  background-image: url(/img/play2.jpg);
+  background-image: url(../img/play2.jpg);
   background-repeat: no-repeat;
 }
 
 .three {
-  background-image: url(/img/play3.jpg);
+  background-image: url(../img/play3.jpg);
   background-repeat: no-repeat;
 }
 
