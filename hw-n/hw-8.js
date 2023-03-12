@@ -1,28 +1,22 @@
 //задание 1
-let arr=[1,5,4,6,2,8];
-const request = (date,callback) => {
+let arr=[3, 4, 1, 9];
+function sum(){
+  let s=arr.reduce((total, amount) => total * amount)
+  console.log(s);
+}
+function mult(){
+  let m=arr.reduce((total, amount) => total + amount);
+  console.log(m);
+}
+function getResult(callback) {
     setTimeout(() => { 
-        let response = 'Ответ';
-          callback(response);
+      let arr=[3, 4, 1, 9]
+          callback();
       }, 1000);
   }; 
 
-const responseProcessing = (b) => {
-  console.log(b);
-  let p=prompt("введите 0 или 1");
-  p=Number(p);
-  if (p===1) {
-      result=arr.reduce((total, amount) => total * amount);
-  } else if(p===0){
-      result=arr.reduce((total, amount) => total + amount);
-  } else{
-    console.log("Не верное число")
-  }
-  console.log(result);
-};
-
-let response = request(arr, responseProcessing);
-
+getResult (sum);
+getResult (mult);
 
 //задание 2
 function compareUser(a, b) { 
@@ -40,20 +34,22 @@ const users = [
 ];
 console.log(users.sort(compareUser));
 //задание 3
-let massif = [1, '4', 9, 'two'];
-const each = (myArray,retract) => {
+let massif1 = [1, '4', 9, 'two'];
+let massif2= [1, '4', false, 9, 'two'];
+function each(retract){
     setTimeout(() => { 
-        let reply = massif.reverse();;
-        retract(reply);
+        retract();
       }, 1000);
   }; 
-
-const replyProcessing = (reply) => {
+function reversArr(){
+  let reply = massif1.reverse();
   console.log(reply);
-  console.log(massif.map(string => +string));
-  
+}
+function toNumberArr() {
+  console.log(massif2.map(string => +string));
 };
-let reply = each(massif, replyProcessing);
+each(reversArr);
+each(toNumberArr);
 //задание 4
 let period= new Date();
 
