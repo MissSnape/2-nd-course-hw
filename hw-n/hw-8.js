@@ -1,22 +1,17 @@
 //задание 1
-let arr=[3, 4, 1, 9];
-function sum(){
-  let s=arr.reduce((total, amount) => total * amount)
-  console.log(s);
+function getResult(arr,callback) {
+        return callback(arr);
+}; 
+function sum(arr){
+  return arr.reduce((acc, cur) => acc * cur, 1)
 }
-function mult(){
-  let m=arr.reduce((total, amount) => total + amount);
-  console.log(m);
+function mult(arr){
+  return arr.reduce((acc, cur) => acc + cur,0);
 }
-function getResult(callback) {
-    setTimeout(() => { 
-      let arr=[3, 4, 1, 9]
-          callback();
-      }, 1000);
-  }; 
 
-getResult (sum);
-getResult (mult);
+
+console.log(getResult ([3, 4, 1, 9],sum));
+console.log(getResult ([3, 4, 1, 9],mult));
 
 //задание 2
 function compareUser(a, b) { 
@@ -34,22 +29,19 @@ const users = [
 ];
 console.log(users.sort(compareUser));
 //задание 3
-let massif1 = [1, '4', 9, 'two'];
-let massif2= [1, '4', false, 9, 'two'];
-function each(retract){
-    setTimeout(() => { 
-        retract();
-      }, 1000);
+const massif1 = [1, '4', 9, 'two'];
+function each(massif1,retract){
+       return retract(massif1);
   }; 
-function reversArr(){
-  let reply = massif1.reverse();
-  console.log(reply);
+function reversArr(massif1){
+  return massif1.reverse();
+  
 }
 function toNumberArr() {
-  console.log(massif2.map(string => +string));
+  return massif1.map(string => +string);
 };
-each(reversArr);
-each(toNumberArr);
+console.log(each(massif1,reversArr));
+console.log(each(massif1,toNumberArr));
 //задание 4
 let period= new Date();
 
